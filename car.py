@@ -7,5 +7,3 @@ class Car:
     ):
         self.car_name = car_name
         self.car_speed = car_speed
-
-

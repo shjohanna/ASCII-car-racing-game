@@ -91,33 +91,35 @@ def car_race():
                 print("Wrong option.")
 
 
-end_game = False
-action = False
-start_race = False
-race_round = False
+def start_race():
+    end_game = False
 
-print("==========WELCOME TO THE========== \n===NEED FOR SPEED TERMINAL RACE===")
-sleep(1)
+    print("==========WELCOME TO THE========== \n===NEED FOR SPEED TERMINAL RACE===")
+    sleep(1)
 
-while not end_game:
+    while not end_game:
 
-    user_choice = input(
-        " \n1 - START RACE! \n2 - See score-board \n3 - QUIT! \nType option number: "
-    )
-    check_action = user_choice.isnumeric()
-    if check_action is False or int(user_choice) not in range(1, 4):
-        print("Wrong input. Please type option number 1, 2 or 3!")
-        continue
-    elif int(user_choice) == 1:
-        print(" \nREADY")
-        sleep(0.5)
-        print("SET")
-        sleep(0.5)
-        print("GO! \n")
-        sleep(0.5)
-        car_race()
-    elif int(user_choice) == 2:
-        show_results()
-    elif int(user_choice) == 3:
-        print(" \nThanks for playing! See you back soon!")
-        quit()
+        user_choice = input(
+            " \n1 - START RACE! \n2 - See score-board \n3 - QUIT! \nType option number: "
+        )
+        check_action = user_choice.isnumeric()
+        if check_action is False or int(user_choice) not in range(1, 4):
+            print("Wrong input. Please type option number 1, 2 or 3!")
+            continue
+        elif int(user_choice) == 1:
+            print(" \nREADY")
+            sleep(0.5)
+            print("SET")
+            sleep(0.5)
+            print("GO! \n")
+            sleep(0.5)
+            car_race()
+        elif int(user_choice) == 2:
+            show_results()
+        elif int(user_choice) == 3:
+            print(" \nThanks for playing! See you back soon!")
+            quit()
+
+
+if __name__ == '__main__':
+    start_race()

@@ -15,4 +15,3 @@ class Track:
 
 
 track = Track(random.randint(8, 11))
-
