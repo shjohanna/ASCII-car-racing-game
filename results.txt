@@ -1,8 +1,0 @@
-Car [31m RED [0m finished in 0.50 seconds! 
-Car [34m BLU [0m finished in 0.50 seconds! 
-Car [31m RED [0m finished in 0.50 seconds! 
-Car [31m RED [0m finished in 0.51 seconds! 
-Car [31m RED [0m finished in 0.50 seconds! 
-TIE! Race finished in 0.50 seconds! 
-TIE! Race finished in 0.50 seconds! 
-Car [31m RED [0m finished in 0.50 seconds! 
